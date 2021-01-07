@@ -232,10 +232,12 @@ img{
     color: white;
     font-family: "HND";
     width: 94%;
+    padding: 0 1rem;
 }
 @media(min-width:480px){
     #cuenta{
         width: 75%;
+        padding: 0;
     }
 }
 
