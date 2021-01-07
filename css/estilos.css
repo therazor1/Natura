@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "HND";
+    src: url('fonts/HelveticaNowDisplay-Regular.ttf');
+}
+body{
+    background-color: #0F3359;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+}
+
+
+
+
+.imagen-circles{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.imagen-circles img{
+    width: 75%;
+}
+
+.imagen-triangulo-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.imagen-triangulo-top img{
+    width: 80%;
+}
+
+
+.imagen-cuadrado-h4{
+    position: absolute;
+    display: flex;
+    top: 4%;
+    right: 4%;
+}
+.imagen-cuadrado-h4 img{
+    width: 80%;
+}
+
+
+.imagen-circulo-h6{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 7%;
+}
+
+.imagen-circulo-h6 img{
+    width: 80%;
+}
+
+
+.imagen-forma-h9{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+}
+
+.imagen-forma-h9 img{
+    width: 80%;
+}
+
+.imagen-forma-h3{
+    position: absolute;
+    display: flex;
+    left: 31%;
+    bottom: 14%;
+}
+.imagen-forma-h3 img{
+    width: 80%;
+}
+
+.imagen-forma-h10{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 32%;
+}
+
+.imagen-forma-h10 img{
+    width: 80%;
+}
+
+.imagen-forma-h2{
+    position: absolute;
+    display: flex;
+    bottom: 11%;
+    right: 37%;
+}
+.imagen-forma-h2 img{
+    width: 80%;
+}
+
+.imagen-forma-h5{
+    position: absolute;
+    display: flex;
+    right: 1%;
+    bottom: 4%;
+}
+.imagen-forma-h5 img{
+    width: 80%;
+}
+.imagen-forma-h7{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.imagen-forma-h7 img{
+    width: 75%;
+}
+
+
+
+
+.logo{
+    display: flex;
+    justify-content:center;
+}
+.logo img{
+    width: 90%;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #DDE9EC;
+    font-family: "HND";
+    font-weight: 400;
+    opacity: .87;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    z-index: 1;
+    justify-content: space-around;
+}
+
+
+
+/* Cuenta regresiva */
+#cuenta{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "HND";
+    width: 75%;
+}
+
+.simply-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.simply-amount{
+    font-size: 55px;
+    margin-bottom: .2rem;
+}
+
+.simply-word{
+    font-size: 13px;
+    color: #DDE9EC;
+    opacity: .87;
+}
+
+.simply-days-section, .simply-hours-section, .simply-minutes-section{
+    position: relative;
+}
+.simply-days-section::after, .simply-hours-section::after, .simply-minutes-section::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: -25px;
+    bottom: 40px;
+    background-color: #DDE9EC;
+
+}
+
+.simply-days-section::before, .simply-hours-section::before, .simply-minutes-section::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: -25px;
+    top: 25px;
+    background-color: #DDE9EC;
+
+}
