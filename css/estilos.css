@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @font-face{
     font-family: "HND";
@@ -10,9 +11,15 @@
 body{
     background-color: #0F3359;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     overflow: hidden;
 }
@@ -27,9 +34,15 @@ img{
     position: absolute;
     top: 4%;
     left: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1;
 }
 .imagen-circles img{
@@ -40,9 +53,15 @@ img{
     position: absolute;
     left: 0;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .imagen-triangulo-top img{
     width: 80%;
@@ -51,6 +70,8 @@ img{
 
 .imagen-cuadrado-h4{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 4%;
     right: 4%;
@@ -62,6 +83,8 @@ img{
 
 .imagen-circulo-h6{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 0;
     right: 7%;
@@ -74,6 +97,8 @@ img{
 
 .imagen-forma-h9{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: 0;
     left: 0;
@@ -85,6 +110,8 @@ img{
 
 .imagen-forma-h3{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     left: 31%;
     bottom: 14%;
@@ -95,6 +122,8 @@ img{
 
 .imagen-forma-h10{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: 0;
     left: 32%;
@@ -106,6 +135,8 @@ img{
 
 .imagen-forma-h2{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: 11%;
     right: 37%;
@@ -116,6 +147,8 @@ img{
 
 .imagen-forma-h5{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 1%;
     bottom: 4%;
@@ -125,9 +158,13 @@ img{
 }
 .imagen-forma-h7{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: 0;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     right: 0;
 }
 
@@ -139,8 +176,12 @@ img{
 
 
 .logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
 }
 .logo img{
     width: 90%;
@@ -156,12 +197,20 @@ img{
 
 
 .contenido{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 380px;
     z-index: 1;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 
@@ -169,18 +218,38 @@ img{
 /* Cuenta regresiva */
 #cuenta{
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
     font-family: "HND";
-    width: 75%;
+    width: 94%;
+}
+@media(min-width:480px){
+    #cuenta{
+        width: 75%;
+    }
 }
 
 .simply-section div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 .simply-amount{
